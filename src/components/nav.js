@@ -11,12 +11,11 @@ function BasicExample() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Word Relay</Nav.Link>
-            <Nav.Link href="#link">끝말잇기</Nav.Link>
-            <Nav.Link href="#link">숫자야구</Nav.Link>
-            <Nav.Link href="#link">가위바위보</Nav.Link>
-            <Nav.Link href="#link">반응속도 테스트</Nav.Link>
-            <Nav.Link href="#link">tic! tac! toe!</Nav.Link>
+            <Nav.Link href="#word-relay">끝말잇기</Nav.Link>
+            <Nav.Link href="#number-baseball">숫자야구</Nav.Link>
+            <Nav.Link href="#rock-scissors-paper">가위바위보</Nav.Link>
+            <Nav.Link href="#response-test">반응속도 테스트</Nav.Link>
+            <Nav.Link href="#tic-tac-toe">tic! tac! toe!</Nav.Link>
             {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
