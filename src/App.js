@@ -5,8 +5,8 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
-import Register from "./pages/registerPage/Register";
-import Login from "./pages/loginPage/Login";
+import Register from "./pages/auth/Register";
+import Login from "./pages/auth/Login";
 
 function App() {
   return (
