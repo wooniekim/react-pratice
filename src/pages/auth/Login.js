@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import {
   signInWithEmailAndPassword,
-  signOut,
+  // signOut,
 } from "firebase/auth";
 import { firebaseAuth } from "../../Firebase";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [loginEmail, setLoginEmail] = useState("");
@@ -23,10 +24,10 @@ const Login = () => {
     }
   };
 
-  const logout = async () => {
-    await signOut(firebaseAuth);
-    console.log("로그아웃");
-  };
+  // const logout = async () => {
+  //   await signOut(firebaseAuth);
+  //   console.log("로그아웃");
+  // };
 
   return (
     <>
@@ -43,9 +44,8 @@ const Login = () => {
         onChange={(e) => {
           setLoginPassword(e.target.value);
         }}
-      />
-      <button onClick={login}>로그인</button>
-      <button onClick={logout}>로그아웃</button>
+        />
+      <Link to='/'><button onClick={login}>로그인</button></Link>
     </>
   );
 };
