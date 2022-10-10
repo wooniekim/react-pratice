@@ -1,23 +1,15 @@
-// import Nav from './components/nav';
-// import Footer from './components/footer';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from 'react-router-dom';
-import Register from "./pages/auth/Register";
-import Login from "./pages/auth/Login";
+import Mainpage from './pages/Mainpage';
+import Login from './pages/auth/Login';
+import Register from './pages/auth/Register';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
-        <Route path="/auth">
-          <Register />
-        </Route>
-        <Route path="/">
-          <Login />
-        </Route>
-    </Router>
+    <Routes>
+      <Route path='/' element={<Mainpage />}/>
+      <Route path='/login' element={<Login />}/>
+      <Route path='/register' element={<Register />}/>
+    </Routes>
   );
 }
 

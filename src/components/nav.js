@@ -2,6 +2,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 // import NavDropdown from 'react-bootstrap/NavDropdown';
+import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
 function BasicExample() {
   return (
@@ -27,6 +29,8 @@ function BasicExample() {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown> */}
+            <Link to='/login'><Button variant="warning">로그인</Button></Link>
+            <Link to='/register'><Button variant="warning">회원가입</Button></Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
